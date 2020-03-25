@@ -26,3 +26,16 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+num1 <- 5
+vNum1 <- c(2,5)
+vNum2 <- c(2, num1)
+```
+```{r}
+vNum1 <- c(-1,5)
+vNum2 <- c(2,3)
+vNum3 <- c(vNum1,vNum2)
+vNum4 <- c(-1,5,2,3)
+vNum5 <- c(c(-1,5),c(2,3))
+```
+
