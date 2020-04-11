@@ -94,4 +94,11 @@ newTaipeiCityVaccine[[1]]
 names(newTaipeiCityVaccine)
 newTaipeiCityVaccine$success
 ```
+```{r}
+# 顯示到第一層
+str(listExample, max.level=1)
+
+listExample[c(1,2)]
+tainanSportsMap[c(1,2,3)]
+```
 
