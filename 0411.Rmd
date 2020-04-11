@@ -73,4 +73,12 @@ length(tainanSportsMap)
 ```{r}
 tainanSportsMap[[105]]
 ```
+```{r}
+names(listExample)
+listExample$`學期`
+listExample$student
+```
+```{r}
+str(listExample)
+```
 
