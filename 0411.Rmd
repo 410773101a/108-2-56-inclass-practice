@@ -80,5 +80,15 @@ listExample$student
 ```
 ```{r}
 str(listExample)
+student<-"student"
+```
+```{r}
+fromJSON("http://data.ntpc.gov.tw/api/v1/rest/datastore/382000000A-000157-002",
+         simplifyDataFrame = F) -> newTaipeiCityVaccin
+
+```
+```{r}
+length(newTaipeiCityVaccine)
+str(newTaipeiCityVaccine)
 ```
 
