@@ -101,4 +101,10 @@ str(listExample, max.level=1)
 listExample[c(1,2)]
 tainanSportsMap[c(1,2,3)]
 ```
+```{r}
+fromJSON("https://www.dropbox.com/s/qnm9bnz7vccrvcz/taipeiNightMarkets.json?dl=1", simplifyDataFrame = F) -> taipeiNightMarkets
+names(taipeiNightMarkets)
+taipeiNightMarkets[c(1,2,3,4,5)]
+vectorExample[c(T,T,F)]
+```
 
