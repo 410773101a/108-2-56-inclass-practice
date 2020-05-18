@@ -48,4 +48,20 @@ jsonlite::fromJSON("https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender
 ```{r}
 Sys.getlocale("LC_COLLATE")
 ```
+```{r}
+# 不可排序類別：性別、縣市、是否境外移入
+covid19$縣市 <- 
+  factor(covid19$縣市)
+covid19$性別 <-
+  factor(covid19$性別)
+covid19$是否為境外移入 <-
+  factor(
+    covid19$是否為境外移入
+  )
+```
+```{r}
+levels(covid19$縣市)
+levels(covid19$性別)
+levels(covid19$是否為境外移入)
+```
 
