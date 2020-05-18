@@ -84,4 +84,8 @@ levels(covid19$縣市) # 是名稱字串向量
 levels(covid19$縣市) -> levelsInData
 population[levelsInData] -> population
 ```
+```{r}
+population <- sort(population, decreasing=T)
+population
+```
 
