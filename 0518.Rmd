@@ -77,4 +77,11 @@ a[[4]] <- "7" # 元素不存在： 增加
 a[c(5,6)] <- c("J", "K")
 a
 ```
+```{r}
+levels(covid19$縣市) # 是名稱字串向量
+
+# 由於population元素值有names，可以用`[名稱字串向量]`取出所要的
+levels(covid19$縣市) -> levelsInData
+population[levelsInData] -> population
+```
 
