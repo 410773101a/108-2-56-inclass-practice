@@ -64,4 +64,17 @@ levels(covid19$縣市)
 levels(covid19$性別)
 levels(covid19$是否為境外移入)
 ```
+```{r}
+levels(covid19$性別)
+covid19$性別 <- factor(covid19$性別, c("男","女"))
+```
+
+```{r}
+a <- c("1","b","TRUE")
+a
+a[[2]] <- "c" # 元素存在: 替換
+a[[4]] <- "7" # 元素不存在： 增加
+a[c(5,6)] <- c("J", "K")
+a
+```
 
