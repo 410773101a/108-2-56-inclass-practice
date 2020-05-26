@@ -88,4 +88,7 @@ population[levelsInData] -> population
 population <- sort(population, decreasing=T)
 population
 ```
+```{r}
+library(purrr)
+```
 
